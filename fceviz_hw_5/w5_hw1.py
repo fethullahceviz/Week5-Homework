@@ -32,17 +32,10 @@ class Society():
         return data
 
     def allocate_flat(self):        
-        if self.i>=25000:
-            self.f ="AType"           
-            
-        elif self.i>=20000 and self.i<25000:
-            self.f ="BType"
-           
-        elif self.i>=15000 and self.i<20000:
-            self.f = "CType"
-           
-        else:
-            self.f = "DType"
+        if self.i>=25000                    :self.f ="AType"   
+        elif self.i>=20000 and self.i<25000 :self.f ="BType"
+        elif self.i>=15000 and self.i<20000 :self.f = "CType"
+        else                                :self.f = "DType"
         return self.f
 
     def show_data(self):
